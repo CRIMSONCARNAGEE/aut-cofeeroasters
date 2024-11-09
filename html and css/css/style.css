@@ -1,3 +1,10 @@
+/* Props */
+:root {
+--primary-color: #333;
+--green-color: #0A775F;
+--yellow-color: #C99B67;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,10 +24,10 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  line-height: 1.5;
-  font-family: "Arial", "sans-serif";
+  line-height: 1.75;
+  font-family:"Roboto" "Arial", "sans-serif";
   background-color: #fff;
-  color: #222;
+  color: var(--primary-color);
 }
 img {
   max-width: 100%;
