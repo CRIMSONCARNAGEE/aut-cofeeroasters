@@ -1,8 +1,8 @@
 /* Props */
 :root {
---primary-color: #333;
---green-color: #0A775F;
---yellow-color: #C99B67;
+  --primary-color: #333;
+  --green-color: #0A775F;
+  --yellow-color: #C99B67;
 }
 
 /* GLOBAL */
@@ -25,7 +25,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.75;
-  font-family:"Roboto" "Arial", "sans-serif";
+  font-family:"Roboto", "Arial", "sans-serif";
   background-color: #fff;
   color: var(--primary-color);
 }
@@ -34,11 +34,16 @@ img {
   height: auto;
 }
 
+*:focus {
+  outline: 2px dashed var(--green-color);
+  outline-offset: 2px;
+}
+
 /* CONTAINER */
 .container {
-  max-width: 1200;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,4 +51,102 @@ img {
 /* MAIN CONTENT */
 .main-container {
   flex-grow: 1;
+}
+
+
+/* Site header backround wrapper */
+.site-header-hero-wrapper {
+  background-image: url(../img/site-header-bg.jpg);
+}
+
+/* Site header */
+
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.site-logo-img {
+  display: flex;
+  text-decoration: none;
+}
+.site-logo-img-item {
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+.site-logo-img-item:hover {
+  opacity: 0.8;
+}
+.site-logo-img-item:active {
+  opacity: 0.6;
+}
+.site-nav-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.site-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.site-nav-items {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease ;
+}
+.site-nav-items:hover {
+  color: var(--green-color);
+}
+.site-nav-items:active {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* retina bg */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  /* Retina-specific stuff here */
+  .site-header-hero-wrapper {
+    background-image: url(../img/site-header-bg@2x.jpg);
+  }
 }
