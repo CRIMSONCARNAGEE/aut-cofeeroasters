@@ -7,6 +7,7 @@
   --accent-color-green-60: rgba(10, 119, 95, 0.6);
   --accent-color-yellow-80: rgba(201, 155, 103, 0.8);
   --accent-color-yellow-60: rgba(201, 155, 103, 0.6);
+  --ligt-brown: #F8F8F2;
 }
 
 /* GLOBAL */
@@ -56,7 +57,7 @@ img {
   white-space: nowrap;
 }
 .button-green {
- background-color: var(--green-color);
+  background-color: var(--green-color);
 }
 .button-green:hover {
   background-color: var(--accent-color-green-80);
@@ -67,13 +68,13 @@ img {
 
 .button-yellow {
   background-color: var(--yellow-color);
- }
- .button-yellow:hover {
-   background-color: var(--accent-color-yellow-80);
- }
- .button-yellow:active {
-   background-color: var(--accent-color-yellow-60);
- }
+}
+.button-yellow:hover {
+  background-color: var(--accent-color-yellow-80);
+}
+.button-yellow:active {
+  background-color: var(--accent-color-yellow-60);
+}
 /* CONTAINER */
 .container {
   max-width: 1440px;
@@ -84,7 +85,9 @@ img {
 }
 
 /* MAIN CONTENT */
-.main-container {
+.main-content {
+  padding-top: 20px;
+  padding-bottom: 50px;
   flex-grow: 1;
 }
 
@@ -196,7 +199,74 @@ img {
   height: 696px;
 }
 
+/* main */
+.index-collection {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-image: url(../img/index-collection-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.index-collection-container {
+  margin: 0;
+  padding: 50px 143px;
+}
 
+.index-collection-title {
+  margin-bottom: 80px;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: normal;
+  color: #000;
+}
+.index-collection-list {
+  list-style: none;
+}
+.index-collection-item {
+  display: flex;
+  align-items: center;
+}
+.index-collection-item:nth-child(even) {
+ flex-direction: row-reverse;
+}
+.index-collection-img {
+  flex-shrink: 0;
+  width: 450;
+  height: 375px;
+  object-fit: cover;
+}
+.index-collection-info {
+  padding-left: 117px;
+  padding-right: 117px;
+  flex-grow: 1;
+  width: 453px;
+  height: 134px;
+}
+.index-collection-heading {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  line-height: normal;
+  color: var(--primary-color);
+}
+.index-collection-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 0;
+}
+.index-collection-text:not(:last-child) {
+  margin-bottom: 10px;
+}
+/* .index-collection-item:nth-child(odd) .index-collection-info {
+ padding-left: 117px;
+}
+.index-collection-item:nth-child(even) .index-collection-info {
+  padding-left: 117px;
+ } */
 
 
 
