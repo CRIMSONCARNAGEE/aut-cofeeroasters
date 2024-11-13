@@ -270,16 +270,73 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* index-features */
+.index-features {
+margin-bottom: 30px;
+}
+.index-features-inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../img/index-features-body-bg.jpg);
+  background-size: 100% 700px ;
+  background-repeat: no-repeat;
+  padding: 50px 30px;
+}
+.index-features-heading {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: normal;
+  color: #fff;
+  text-transform: uppercase;
+}
+.index-features-text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 400px;
+  text-align: center;
+  width: 581px;
+  height: 84px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+.index-features-list {
+  display: flex;
+  list-style: none;
+  padding-top: 70px;
+}
+.index-features-item {
+  margin: 0;
+  padding: 0;
+  width: 433px;
+  height: 629px;
+}
+.index-features-item:not(:last-child) {
+  padding-right: 15px;
+}
+.index-features-img {
+  object-fit: contain;
+  width: 433px;
+  height: 500px;
+}
+.index-features-item-heading {
+  font-size: 30px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.index-features-item-text {
+  font-size: 18px;
+  line-height: 28px;
+  width: 377px;
+  height: 56px;
+}
 
 
 
@@ -300,5 +357,8 @@ only screen and (                min-resolution: 2dppx) {
   /* Retina-specific stuff here */
   .site-header-hero-wrapper {
     background-image: url(../img/site-header-bg@2x.jpg);
+  }
+  .index-features-inner {
+    background-image: url(../img/index-features-body-bg@2x.jpg);
   }
 }
