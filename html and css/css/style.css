@@ -139,6 +139,10 @@ img {
 .site-nav-item:not(:last-child) {
   margin-right: 40px;
 }
+.sitenav-medium .site-nav-items {
+  font-size: 16px;
+  line-height: normal;
+}
 .site-nav-items {
   display: block;
   text-transform: uppercase;
@@ -407,7 +411,7 @@ margin-bottom: 30px;
 .how-it-works-info-title {
   margin-top: 0;
   margin-bottom: 10px;
-  max-width: 250xp;
+  max-width: 250px;
   width: 250px;
   font-size: 40px;
   font-weight: 500;
@@ -428,7 +432,54 @@ margin-bottom: 30px;
 
 
 
+/* site footer */
+.site-footer {
+  margin: 0;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  height: 100px;
+  background-color: #F3D7B7;
+  background-image: url(../img/site-header-bg.jpg);
+  background-repeat: repeat;
+}
+.site-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
+.site-logo-img-item {
+  flex-shrink: 0;
+width: 235px;
+height: 24px;
+object-fit: contain;
+}
+
+
+/* ?footer-socials */
+
+.socials {
+  list-style: none;
+}
+.socials-item {
+margin-top: 0;
+}
+.socials-item-logo-img {
+  width: 30px;
+  height: 30px;
+}
+.socials-link:not(:last-child) {
+padding-right: 10px;
+}
+.socials-item-logo-img:hover {
+  opacity: 0.8;
+}
+.socials-item-logo-img:active {
+  opacity: 0.6;
+}
 
 
 
